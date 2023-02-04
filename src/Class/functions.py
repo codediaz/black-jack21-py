@@ -1,5 +1,5 @@
 import random
-import graphics
+import src.Class.graphics as graphics
 import time
 import pygame
 from pygame.locals import *

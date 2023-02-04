@@ -1,6 +1,6 @@
-import functions
-from hand import Hand
-import graphics
+import src.Class.functions as functions
+from src.Class.hand import Hand
+import src.Class.graphics as graphics
 import pygame
 from pygame.locals import *
 import sys
