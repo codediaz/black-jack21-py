@@ -87,23 +87,23 @@ def draw_card(x, y, cardFace):
         suitImage.centery = yPos[digit][spot]
 
         if suit == "d":
-            diamond = pygame.image.load("diamond2.png")
+            diamond = pygame.image.load("/resources/img/diamond2.png")
             #fit diamond image to card size
             diamond = pygame.transform.scale(diamond, (20, 20))
             windowSurface.blit(diamond, suitImage)
 
         if suit == "h":
-            heart = pygame.image.load("heart2.png")
+            heart = pygame.image.load("/resources/img/heart2.png")
             heart = pygame.transform.scale(heart, (15, 15))
             windowSurface.blit(heart, suitImage)
 
         if suit == "c":
-            club = pygame.image.load("clubs.png")
+            club = pygame.image.load("/resources/img/clubs.png")
             club = pygame.transform.scale(club, (20, 20))
             windowSurface.blit(club, suitImage)
 
         if suit == "s":
-            spade = pygame.image.load("spade.png")
+            spade = pygame.image.load("/resources/img/spade.png")
             spade = pygame.transform.scale(spade, (20, 20))
             windowSurface.blit(spade, suitImage)
 
