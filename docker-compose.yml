@@ -1,0 +1,16 @@
+version: '3.5'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /var/www/app
+    container_name: blackjack-21
+    restart: unless-stopped
+    tty: true
+    #command: uvicorn estudiantes:app --reload --workers 1 --host 0.0.0.0 --port 80
+    ports:
+      - 80:80
+    volumes:
+      - ./:/var/www/app
+  
